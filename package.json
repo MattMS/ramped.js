@@ -7,6 +7,9 @@
     "ramda": "^0.19.1"
   },
   "description": "Ramped up functions.",
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
   "homepage": "https://github.com/MattMS/ramped#readme",
   "license": "ISC",
   "main": "index.js",
@@ -16,7 +19,8 @@
     "url": "git+https://github.com/MattMS/ramped.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile_all": "coffee -c .",
+    "test": "coffee ./test/index.coffee.md"
   },
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
