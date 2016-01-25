@@ -3,6 +3,9 @@
   "bugs": {
     "url": "https://github.com/MattMS/ramped/issues"
   },
+  "dependencies": {
+    "ramda": "^0.19.1"
+  },
   "description": "Ramped up functions.",
   "homepage": "https://github.com/MattMS/ramped#readme",
   "license": "ISC",
