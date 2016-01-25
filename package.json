@@ -1,0 +1,19 @@
+{
+  "author": "Matt McKellar-Spence",
+  "bugs": {
+    "url": "https://github.com/MattMS/ramped/issues"
+  },
+  "description": "Ramped up functions.",
+  "homepage": "https://github.com/MattMS/ramped#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ramped",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattMS/ramped.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}
