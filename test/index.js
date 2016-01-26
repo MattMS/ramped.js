@@ -4,7 +4,7 @@
 
   assert = require('assert');
 
-  test_modules = [require('./make_array'), require('./make_object')];
+  test_modules = [require('./evolve_with_input'), require('./make_array'), require('./make_object')];
 
   for (i = 0, len = test_modules.length; i < len; i++) {
     test_module = test_modules[i];

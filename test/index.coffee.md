@@ -5,6 +5,7 @@
 	assert = require 'assert'
 
 	test_modules = [
+		require './evolve_with_input'
 		require './make_array'
 		require './make_object'
 	]
