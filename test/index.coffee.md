@@ -4,10 +4,14 @@
 
 	assert = require 'assert'
 
-	make_object = require './make_object'
+	test_modules = [
+		require './make_array'
+		require './make_object'
+	]
 
 
 ## Run
 
-	for test in make_object
-		assert.deepEqual test.call(test.input), test.output
+	for test_module in test_modules
+		for test in test_module
+			assert.deepEqual test.call(test.input), test.output

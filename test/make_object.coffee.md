@@ -2,7 +2,7 @@
 
 ## Imports
 
-	make_object = require '../make_object'
+	main = require '..'
 
 	R = require 'ramda'
 
@@ -10,7 +10,7 @@
 ## Exports
 
 	module.exports = [
-		call: make_object
+		call: main.make_object
 			c: R.prop 'a'
 			d: R.prop 'b'
 
@@ -22,7 +22,7 @@
 			c: 1
 			d: 2
 	,
-		call: make_object
+		call: main.make_object
 			a: R.pipe R.prop('a'), R.add(2)
 			b: R.pipe R.prop('b'), R.add(2)
 
