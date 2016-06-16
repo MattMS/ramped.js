@@ -1,16 +1,21 @@
 # Test make object
 
-## Imports
-
-	main = require '..'
+## Library imports
 
 	R = require 'ramda'
+
+	tape = require 'tape'
+
+
+## Relative imports
+
+	make_object = require '../make_object'
 
 
 ## Exports
 
-	module.exports = [
-		call: main.make_object
+	tests = [
+		call: make_object
 			c: R.prop 'a'
 			d: R.prop 'b'
 
@@ -22,7 +27,7 @@
 			c: 1
 			d: 2
 	,
-		call: main.make_object
+		call: make_object
 			a: R.pipe R.prop('a'), R.add(2)
 			b: R.pipe R.prop('b'), R.add(2)
 
@@ -34,3 +39,13 @@
 			a: 3
 			b: 4
 	]
+
+	for test_data in tests
+		tape 'Make object', (t)->
+			t.plan 1
+
+			desired_output = test_data.output
+
+			actual_output = test_data.call test_data.input
+
+			t.deepEqual actual_output, desired_output
