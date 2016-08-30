@@ -1,7 +1,7 @@
 {
   "author": "Matt McKellar-Spence",
   "bugs": {
-    "url": "https://github.com/MattMS/ramped/issues"
+    "url": "https://github.com/MattMS/ramped.js/issues"
   },
   "dependencies": {
     "ramda": "^0.19.1"
@@ -13,13 +13,13 @@
     "rimraf": "^2.5.4",
     "tape": "^4.5.1"
   },
-  "homepage": "https://github.com/MattMS/ramped#readme",
+  "homepage": "https://github.com/MattMS/ramped.js#readme",
   "license": "ISC",
   "main": "main.js",
   "name": "ramped",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MattMS/ramped.git"
+    "url": "git+https://github.com/MattMS/ramped.js.git"
   },
   "scripts": {
     "clean": "rimraf main.js make_array/main.js make_object/main.js",
