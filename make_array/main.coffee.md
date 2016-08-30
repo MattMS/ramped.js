@@ -2,11 +2,11 @@
 
 ## Imports
 
-	R = require 'ramda'
+	{curry} = require 'ramda'
 
 
 ## Exports
 
-	module.exports = R.curry (items, value)->
+	module.exports = curry (items, value)->
 		for call in items
 			call value
