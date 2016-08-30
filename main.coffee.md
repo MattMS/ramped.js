@@ -1,5 +1,5 @@
 # Ramped
 
 	module.exports =
-		make_array: require './make_array/main'
-		make_object: require './make_object/main'
+		make_array: require 'ramped.make_array'
+		make_object: require 'ramped.make_object'
