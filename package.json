@@ -22,7 +22,8 @@
     "url": "git+https://github.com/MattMS/ramped.git"
   },
   "scripts": {
-    "compile_all": "coffee -c .",
+    "clean": "rimraf *.js test/*.js",
+    "prepublish": "coffee -c ./",
     "test": "coffeetape ./test/**/*.coffee.md"
   },
   "version": "0.6.1"
