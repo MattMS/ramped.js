@@ -23,19 +23,6 @@ You will also want Ramda installed:
 	ramped = require('ramped')
 
 
-### Evolve with input
-
-Same as the [evolve](http://ramdajs.com/docs/#evolve) function, but passes the entire object in, instead of just the value of the key.
-
-	convert = ramped.evolve_with_input({
-		a: R.prop('b'),
-		b: R.prop('a')
-	})
-
-	new_object = convert({a: 1, b: 2})
-	// {a: 2, b: 1}
-
-
 ### Make array
 
 	convert = ramped.make_array([
@@ -48,6 +35,8 @@ Same as the [evolve](http://ramdajs.com/docs/#evolve) function, but passes the e
 
 
 ### Make object
+
+Similar to [Ramda.evolve](http://ramdajs.com/docs/#evolve) but passes in the entire object instead of just the value of each key.
 
 	convert = ramped.make_object({
 		c: R.prop('a'),

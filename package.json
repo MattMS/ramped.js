@@ -15,16 +15,16 @@
   },
   "homepage": "https://github.com/MattMS/ramped#readme",
   "license": "ISC",
-  "main": "index.js",
+  "main": "main.js",
   "name": "ramped",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MattMS/ramped.git"
   },
   "scripts": {
-    "clean": "rimraf *.js test/*.js",
-    "prepublish": "coffee -c ./",
-    "test": "coffeetape ./test/**/*.coffee.md"
+    "clean": "rimraf main.js make_array/main.js make_object/main.js",
+    "prepublish": "coffee -c main.coffee.md ./make_array/main.coffee.md ./make_object/main.coffee.md",
+    "test": "coffeetape ./**/test.coffee.md"
   },
   "version": "0.6.1"
 }

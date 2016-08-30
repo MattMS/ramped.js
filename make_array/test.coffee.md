@@ -9,7 +9,7 @@
 
 ## Relative imports
 
-	make_array = require '../make_array'
+	make_array = require './main'
 
 
 ## Exports

@@ -1,4 +1,4 @@
-# Test evolve with input
+# Test make object
 
 ## Library imports
 
@@ -9,27 +9,39 @@
 
 ## Relative imports
 
-	evolve_with_input = require '../evolve_with_input'
+	make_object = require './main'
 
 
 ## Exports
 
 	tests = [
-		call: evolve_with_input
-			a: R.prop 'b'
-			b: R.prop 'a'
+		call: make_object
+			c: R.prop 'a'
+			d: R.prop 'b'
 
 		input:
 			a: 1
 			b: 2
 
 		output:
-			a: 2
-			b: 1
+			c: 1
+			d: 2
+	,
+		call: make_object
+			a: R.pipe R.prop('a'), R.add(2)
+			b: R.pipe R.prop('b'), R.add(2)
+
+		input:
+			a: 1
+			b: 2
+
+		output:
+			a: 3
+			b: 4
 	]
 
 	for test_data in tests
-		tape 'Evolve with input', (t)->
+		tape 'Make object', (t)->
 			t.plan 1
 
 			desired_output = test_data.output
