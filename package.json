@@ -4,7 +4,7 @@
     "url": "https://github.com/MattMS/ramped.js/issues"
   },
   "dependencies": {
-    "ramda": "^0.19.1"
+    "ramda": "^0.22.1"
   },
   "description": "Ramped up functions.",
   "devDependencies": {
