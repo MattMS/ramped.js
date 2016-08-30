@@ -2,12 +2,12 @@
 
 ## Imports
 
-	R = require 'ramda'
+	{curry} = require 'ramda'
 
 
 ## Exports
 
-	module.exports = R.curry (items, value)->
+	module.exports = curry (items, value)->
 		o = {}
 
 		for n, v of items

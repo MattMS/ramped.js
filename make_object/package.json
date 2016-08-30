@@ -1,0 +1,29 @@
+{
+  "author": "Matt McKellar-Spence",
+  "bugs": {
+    "url": "https://github.com/MattMS/ramped.js/issues"
+  },
+  "dependencies": {
+    "ramda": "^0.22.1"
+  },
+  "description": "Build properties of an object from functions applied to a single input.",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "coffeetape": "^1.0.1",
+    "rimraf": "^2.5.4"
+  },
+  "homepage": "https://github.com/MattMS/ramped.js/tree/master/make_object#readme",
+  "license": "ISC",
+  "main": "main.js",
+  "name": "ramped.make_object",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattMS/ramped.js.git"
+  },
+  "scripts": {
+    "clean": "rimraf main.js",
+    "prepublish": "coffee -c main.coffee.md",
+    "test": "coffeetape test.coffee.md"
+  },
+  "version": "0.1.0"
+}
