@@ -2,7 +2,7 @@
 
 ## Imports
 
-	{curry} = require 'ramda'
+	curry = require 'ramped.curry'
 
 
 ## Exports
