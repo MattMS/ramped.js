@@ -2,6 +2,11 @@
 
 Connect functions into a pipeline: the output of one is the input of the next.
 
+The first function in the `pipe` can accept any number of arguments, but it **cannot be partially-applied**.
+
+Consider the following: `pipe([add, map])(3)([1, 2, 3])`.
+If the pipe could be partially-applied, then `add` would receive the Array as the second argument, instead of `map` getting `add(3)` as the first argument.
+
 
 ## Install
 
