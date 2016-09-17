@@ -1,13 +1,15 @@
 # Test pipe
 
-## Library imports
+## Imports
+
+### Library imports
 
 	curry = require 'ramped.curry'
 
 	tape = require 'tape'
 
 
-## Relative imports
+### Relative imports
 
 	pipe = require './main'
 
@@ -23,15 +25,17 @@
 
 ## Run tests
 
-	tape 'Integer math functions', (t)->
+	tape 'Pipe 2 partially-applied functions', (t)->
 		t.plan 1
 
 		get_value = pipe [
-			divide(2)
-			add(7)
+			divide 2
+			add 7
 		]
 
-		t.equal get_value(30), 22, 'Pipe 2 partially-applied functions'
+		result = get_value 30
+
+		t.equal result, 22, 'Correct result'
 
 
 	tape 'Multiple arguments to first call', (t)->
@@ -39,22 +43,26 @@
 
 		get_value = pipe [
 			add
-			divide(2)
+			divide 2
 		]
 
-		t.equal get_value(8, 4), 6, 'Pipe 2 functions'
+		result = get_value 8, 4
+
+		t.equal result, 6, 'Correct result'
 
 
 	tape 'Nested pipe calls', (t)->
 		t.plan 1
 
 		get_value = pipe [
-			divide(2),
-			pipe([
-				add(1),
-				add(2)
-			]),
-			add(4)
+			divide 2
+			pipe [
+				add 1
+				add 2
+			]
+			add 4
 		]
 
-		t.equal get_value(30), 22, 'Returned result correctly'
+		result = get_value 30
+
+		t.equal result, 22, 'Correct result'
