@@ -43,3 +43,18 @@
 		]
 
 		t.equal get_value(8, 4), 6, 'Pipe 2 functions'
+
+
+	tape 'Nested pipe calls', (t)->
+		t.plan 1
+
+		get_value = pipe [
+			divide(2),
+			pipe([
+				add(1),
+				add(2)
+			]),
+			add(4)
+		]
+
+		t.equal get_value(30), 22, 'Returned result correctly'
