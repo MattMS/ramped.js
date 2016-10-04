@@ -1,8 +1,9 @@
 # Ramped make object
 
-Build properties of an object from functions applied to a single input.
+Build properties of an object from functions applied to a single argument.
 
-Similar to [Ramda.evolve](http://ramdajs.com/docs/#evolve) but passes in the entire object instead of just the value of each key.
+Like [Ramda applySpec](http://ramdajs.com/docs/#applySpec), but only accepts a single argument.
+Which is similar to [Ramda.evolve](http://ramdajs.com/docs/#evolve) but this passes in the entire object instead of just the value of each key.
 
 
 ## Install

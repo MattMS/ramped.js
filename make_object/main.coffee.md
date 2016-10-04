@@ -1,8 +1,8 @@
-# Make object
+# Main module for make object
 
 ## Imports
 
-	{curry} = require 'ramda'
+	curry = require 'ramped.curry'
 
 
 ## Exports

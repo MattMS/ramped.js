@@ -1,51 +1,60 @@
-# Test make object
+# Testing make object
 
-## Library imports
+## Imports
 
-	R = require 'ramda'
+### Library imports
+
+	get = require 'ramped.get'
+
+	pipe = require 'ramped.pipe'
+
+	subtract = require 'ramped.subtract'
 
 	tape = require 'tape'
 
 
-## Relative imports
+### Relative imports
 
 	make_object = require './main'
 
 
-## Exports
+## Run tests
 
-	tests = [
-		call: make_object
-			c: R.prop 'a'
-			d: R.prop 'b'
+	tape 'Make object with get functions', (t)->
+		t.plan 1
 
-		input:
-			a: 1
-			b: 2
-
-		output:
+		desired_output =
 			c: 1
 			d: 2
-	,
-		call: make_object
-			a: R.pipe R.prop('a'), R.add(2)
-			b: R.pipe R.prop('b'), R.add(2)
 
-		input:
+		actual_output = make_object
+			c: get 'a'
+			d: get 'b'
+		,
 			a: 1
 			b: 2
 
-		output:
-			a: 3
+		t.deepEqual actual_output, desired_output
+
+
+	tape 'Make object with pipes', (t)->
+		t.plan 1
+
+		desired_output =
+			a: 4
+			b: 2
+
+		actual_output = make_object
+			a: pipe [
+				get 'a'
+				subtract 2
+			]
+			b: pipe [
+				get 'b'
+				subtract 2
+			]
+		,
+			a: 6
 			b: 4
-	]
 
-	for test_data in tests
-		tape 'Make object', (t)->
-			t.plan 1
-
-			desired_output = test_data.output
-
-			actual_output = test_data.call test_data.input
-
-			t.deepEqual actual_output, desired_output
+		t.deepEqual actual_output, desired_output
