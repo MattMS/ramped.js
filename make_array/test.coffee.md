@@ -1,41 +1,34 @@
-# Test make array
+# Testing make array
 
-## Library imports
+## Imports
 
-	R = require 'ramda'
+### Library imports
+
+	get = require 'ramped.get'
 
 	tape = require 'tape'
 
 
-## Relative imports
+### Relative imports
 
 	make_array = require './main'
 
 
-## Exports
+## Run test
 
-	tests = [
-		call: make_array [
-			R.prop 'a'
-			R.prop 'b'
-		]
+	tape 'Make array', (t)->
+		t.plan 1
 
-		input:
-			a: 1
-			b: 2
-
-		output: [
+		desired_output = [
 			1
 			2
 		]
-	]
 
-	for test_data in tests
-		tape 'Make array', (t)->
-			t.plan 1
+		actual_output = make_array [
+			get 'a'
+			get 'b'
+		],
+			a: 1
+			b: 2
 
-			desired_output = test_data.output
-
-			actual_output = test_data.call test_data.input
-
-			t.deepEqual actual_output, desired_output
+		t.deepEqual actual_output, desired_output

@@ -2,6 +2,8 @@
 
 Build items in an array from functions applied to a single input.
 
+This is the same as [Ramda juxt](http://ramdajs.com/docs/#juxt).
+
 
 ## Install
 
