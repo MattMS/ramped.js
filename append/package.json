@@ -1,0 +1,30 @@
+{
+  "author": "Matt McKellar-Spence",
+  "bugs": {
+    "url": "https://github.com/MattMS/ramped.js/issues"
+  },
+  "dependencies": {
+    "ramped.copy": "^0.1.0",
+    "ramped.curry": "^0.1.0"
+  },
+  "description": "Add an item to the end of another Array, Number, or String.",
+  "devDependencies": {
+    "coffee-script": "^1.11.1",
+    "coffeetape": "^1.0.1",
+    "rimraf": "^2.5.4"
+  },
+  "homepage": "https://github.com/MattMS/ramped.js/tree/master/append#readme",
+  "license": "ISC",
+  "main": "main.js",
+  "name": "ramped.append",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattMS/ramped.js.git"
+  },
+  "scripts": {
+    "clean": "rimraf main.js",
+    "prepublish": "coffee -c main.coffee.md",
+    "test": "coffeetape test.coffee.md"
+  },
+  "version": "0.1.0"
+}
