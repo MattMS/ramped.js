@@ -2,6 +2,11 @@
 
 A collection of functions to make functional programming easier.
 
+I would highly recommend using [Ramda](http://ramdajs.com/) first.
+This library implements a small subset of the functions in Ramda using a different approach in naming, parameter ordering, and separating packages.
+
+Each of these functions can be installed individually by prefixing them with `ramped.`, such as `npm i ramped.make_array`.
+
 
 ## Install
 
