@@ -2,6 +2,8 @@
 
 Get the state (0 or 1) of the bit at the given index in a given value.
 
+Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for functional programming.
+
 | Index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |-------|---|---|---|---|---|---|---|---|
 |     1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -38,6 +40,11 @@ To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 
 	lowest_bit(1)
 	// 1
+
+
+## Dependencies
+
+- [ramped.curry](https://www.npmjs.com/package/ramped.curry)
 
 
 ## License
