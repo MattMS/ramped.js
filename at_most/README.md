@@ -2,6 +2,8 @@
 
 Return true if the second value is the same as or smaller than the first.
 
+Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for functional programming.
+
 
 ## Install
 
@@ -24,6 +26,11 @@ To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 
 	is_4_or_less(2)
 	// true
+
+
+## Dependencies
+
+- [ramped.curry](https://www.npmjs.com/package/ramped.curry)
 
 
 ## License
