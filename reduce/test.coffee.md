@@ -1,13 +1,15 @@
 # Test reduce
 
-## Library imports
+## Imports
 
-	{curry} = require 'ramda'
+### Library imports
+
+	curry = require 'ramped.curry'
 
 	tape = require 'tape'
 
 
-## Relative imports
+### Relative imports
 
 	reduce = require './main'
 
