@@ -2,6 +2,8 @@
 
 Return the result of subtracting the first value from the second.
 
+Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for functional programming.
+
 
 ## Install
 
