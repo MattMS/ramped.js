@@ -2,6 +2,8 @@
 
 Make a copy of an Array, Date, or Object.
 
+Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for functional programming.
+
 
 ## Install
 
@@ -22,6 +24,11 @@ To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 
 	duplicate.b.c[0]
 	// 2
+
+
+## Dependencies
+
+None
 
 
 ## License
