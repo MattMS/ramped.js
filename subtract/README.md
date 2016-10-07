@@ -22,6 +22,11 @@ To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 	// 2
 
 
+## Dependencies
+
+- [ramped.curry](https://www.npmjs.com/package/ramped.curry)
+
+
 ## License
 
 [ISC](https://github.com/MattMS/ramped.js/blob/master/LICENSE)
