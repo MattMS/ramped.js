@@ -7,6 +7,8 @@ Then loops the rest of the list, calling the given function with the last return
 The reducer function must accept the current value as the first parameter and the running total as the second parameter.
 This is the flipped version of [Ramda.reduce](http://ramdajs.com/docs/#reduce).
 
+Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for functional programming.
+
 
 ## Install
 
