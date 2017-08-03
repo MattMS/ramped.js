@@ -6,9 +6,9 @@
   "dependencies": {},
   "description": "Make a copy of an Array, Date, or Object.",
   "devDependencies": {
-    "coffee-script": "^1.10.0",
+    "coffee-script": "^1.12.7",
     "coffeetape": "^1.0.1",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.6.1"
   },
   "homepage": "https://github.com/MattMS/ramped.js/tree/master/copy#readme",
   "license": "MIT",
