@@ -9,12 +9,12 @@ Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for func
 
 To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 
-	npm i ramped.curry --save
+	npm i @ramped/curry --save
 
 
 ## Usage
 
-	curry = require('ramped.curry')
+	curry = require('@ramped/curry')
 
 	add_curry = curry(function (a, b) {
 		return a + b
