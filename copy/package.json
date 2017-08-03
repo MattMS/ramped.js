@@ -13,7 +13,7 @@
   "homepage": "https://github.com/MattMS/ramped.js/tree/master/copy#readme",
   "license": "MIT",
   "main": "main.js",
-  "name": "ramped.copy",
+  "name": "@ramped/copy",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MattMS/ramped.js.git"
