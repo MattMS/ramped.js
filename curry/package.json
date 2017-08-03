@@ -11,7 +11,7 @@
     "rimraf": "^2.5.4"
   },
   "homepage": "https://github.com/MattMS/ramped.js/tree/master/curry#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "main.js",
   "name": "ramped.curry",
   "repository": {
