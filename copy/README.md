@@ -9,12 +9,12 @@ Part of the [ramped.js](https://github.com/MattMS/ramped.js) collection for func
 
 To add as a dependency to a [Node.js](https://nodejs.org/en/) project:
 
-	npm i ramped.copy --save
+	npm i @ramped/copy --save
 
 
 ## Usage
 
-	copy = require('ramped.copy')
+	copy = require('@ramped/copy')
 
 	original = {a: 1, b: {c: [2, 3]}}
 
@@ -33,4 +33,4 @@ None
 
 ## License
 
-[ISC](https://github.com/MattMS/ramped.js/blob/master/LICENSE)
+[MIT](https://github.com/MattMS/ramped.js/blob/master/copy/LICENSE)
