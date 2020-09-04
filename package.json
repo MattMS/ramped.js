@@ -24,7 +24,7 @@
   "scripts": {
     "clean": "rimraf main.js make_array/main.js make_object/main.js",
     "prepublish": "coffee -c main.coffee.md",
-    "test": "coffeetape ./make_array/test.coffee.md ./make_object/test.coffee.md"
+    "test": "coffeetape ./*/test.coffee.md"
   },
   "version": "0.7.0"
 }

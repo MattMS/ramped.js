@@ -3,18 +3,21 @@
   "bugs": {
     "url": "https://github.com/MattMS/ramped.js/issues"
   },
-  "dependencies": {},
-  "description": "Connect functions into a pipeline: the output of one is the input of the next.",
-  "devDependencies": {
-    "coffee-script": "^1.12.5",
-    "coffeetape": "^1.0.1",
+  "dependencies": {
+    "ramped.append": "^0.1.0",
     "ramped.curry": "^0.1.0",
-    "rimraf": "^2.6.1"
+    "ramped.reduce": "^0.2.0"
   },
-  "homepage": "https://github.com/MattMS/ramped.js/tree/master/pipe#readme",
-  "license": "MIT",
+  "description": "Append all items in an Array to another Array.",
+  "devDependencies": {
+    "coffee-script": "^1.11.1",
+    "coffeetape": "^1.0.1",
+    "rimraf": "^2.5.4"
+  },
+  "homepage": "https://github.com/MattMS/ramped.js/tree/master/append_all#readme",
+  "license": "ISC",
   "main": "main.js",
-  "name": "@ramped/pipe",
+  "name": "ramped.append_all",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MattMS/ramped.js.git"
@@ -24,5 +27,5 @@
     "prepublish": "coffee -c main.coffee.md",
     "test": "coffeetape test.coffee.md"
   },
-  "version": "0.2.0"
+  "version": "0.1.0"
 }

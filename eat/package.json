@@ -4,17 +4,16 @@
     "url": "https://github.com/MattMS/ramped.js/issues"
   },
   "dependencies": {},
-  "description": "Connect functions into a pipeline: the output of one is the input of the next.",
+  "description": "Simplify calling curried functions",
   "devDependencies": {
-    "coffee-script": "^1.12.5",
-    "coffeetape": "^1.0.1",
-    "ramped.curry": "^0.1.0",
-    "rimraf": "^2.6.1"
+    "coffeescript": "2.3.2",
+    "coffeetape": "1.0.1",
+    "rimraf": "2.6.3"
   },
-  "homepage": "https://github.com/MattMS/ramped.js/tree/master/pipe#readme",
+  "homepage": "https://github.com/MattMS/ramped.js/tree/master/eat#readme",
   "license": "MIT",
   "main": "main.js",
-  "name": "@ramped/pipe",
+  "name": "@ramped/eat",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MattMS/ramped.js.git"
@@ -24,5 +23,5 @@
     "prepublish": "coffee -c main.coffee.md",
     "test": "coffeetape test.coffee.md"
   },
-  "version": "0.2.0"
+  "version": "0.1.0"
 }
